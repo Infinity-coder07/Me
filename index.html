@@ -1,346 +1,255 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arko Sarkar</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Geostar&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Loved+by+the+King&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Lavishly+Yours&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&display=swap');
-</style>
-
-
-<style>
-    :root {
-        --bgcolor: rgb(123, 57, 247);
-        --textcolor: white;
-        --secondary-color: rgb(43, 0, 71);
-    }
-
-    body {
-        background-color: var(--bgcolor);
-    }
-
-
-
-    * {
-        margin: 0;
-        padding: 0;
-        font-size: 15px;
-        color: var(--textcolor);
-
-    }
-
-    nav {
-        background-color: var(--secondary-color);
-        padding: 5px 5px;
-        display: flex;
-        justify-content: center;
-
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 999;
-
-    }
-
-    nav>ul {
-        display: flex;
-        justify-content: space-between;
-        list-style: none;
-        width: 80%;
-        /* or max-width: 800px; */
-    }
-
-
-
-    nav>ul>li>a {
-        text-decoration: none;
-        color: var(--textcolor);
-        /* font-family: "Rubik Glitch", system-ui; */
-        font-family: "Loved by the King", cursive;
-        font-weight: 400;
-        font-style: normal;
-        font-size:  18px;
-        /* font-weight: lighter; */ 
-
-        /* font-family: "Lavishly Yours", cursive; */
-    }
-
-    h1 {
-        color: var(--textcolor);
-        text-align: center;
-        margin-top: 20px;
-        /* font-family: "Lavishly Yours", cursive; */
-        /* font-family: "Londrina Shadow", sans-serif; */
-        font-family: "Monoton", sans-serif;
-        letter-spacing: 2px;
-        font-style: normal;
-        font-weight: 400;
-        padding: 30px;
-        font-size: 20px;
-    }
-
-
-    .img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /* margin-top: 20px; */
-    }
-
-    .img img {
-
-
-
-        margin-top: 20px;
-
-        border-radius: 50%;
-
-        height: 150px;
-        width: 150px;
-    }
-
-    .bio {
-
-        padding: 20px;
-        color: var(--textcolor);
-        font-size: 20px;
-        /* margin-top: 10px; */
-    }
-
-    .bio span {
-        /* font-weight: lighter; */
-        font-family: "Edu NSW ACT Hand Pre", cursive;
-
-    }
-
-    .bio li {
-        /* font-family: "Edu NSW ACT Hand Pre", cursive; */
-        font-family: "Londrina Shadow", sans-serif;
-        /* font-family: "Monoton", sans-serif; */
-        font-style: normal;
-        font-weight: 400;
-        list-style: none;
-    }
-
-    hr {
-        width: 96%;
-        /* align-items: center; */
-        justify-self: center;
-        opacity: 0.5;
-    }
-
-    #about,
-    h2 {
-        font-size: 40px;
-        padding: 20px;
-        font-family: "Londrina Shadow", sans-serif;
-        font-weight: 400;
-    }
-
-    .about {
-        padding-top: 0px;
-    }
-
-    .contact ul li a {
-        text-decoration: none;
-        color: var(--textcolor);
-
-
-        padding-bottom: 20px;
-        font-style: normal;
-        font-weight: 400;
-        font-family: "Edu NSW ACT Hand Pre", cursive;
-
-    }
-
-    .contact li {
-        padding-left: 50px;
-        padding-bottom: 20px;
-        /* align-items: center;
-        display: flex;
-        justify-content: center; */
-    }
-
-    .contact img {
-        height: 30px;
-        width: 30px;
-        margin-right: 10px;
-    }
-    h2 img{
-        border-radius: 50%;
-    }
-    #links  a {
-        padding: 20px;
-        text-decoration: none;
-        padding-bottom: 20px;
-        font-size: 20px;
-        font-family: "Geostar", serif;
-       
-    }
-    #links li{
-        
-        padding-bottom: 20px;
-    }
-    #links{
-        list-style:inside;
-        padding: 40px;
-    }
-    footer {
-        text-align: right;
-        opacity: 0.5;
-        padding: 20px;
-        font-family: "Edu NSW ACT Hand Pre", cursive;
-        color: var(--textcolor);
-        font-size: 18px;
-    }
-</style>
-
-
 <body>
-    <nav>
+
+
+  <div id="main-loading">
+    <!-- From Uiverse.io by anand_4957 -->
+    <div class="clouds">
+      <div class="cloud cloud1"></div>
+      <div class="cloud cloud2"></div>
+      <div class="cloud cloud3"></div>
+      <div class="cloud cloud4"></div>
+      <div class="cloud cloud5"></div>
+    </div>
+
+    <div class="loader">
+      <span><span></span><span></span><span></span><span></span></span>
+      <div class="base">
+        <span></span>
+        <div class="face"></div>
+      </div>
+    </div>
+
+    <div class="longfazers">
+      <span></span><span></span><span></span><span></span>
+    </div>
+
+  </div>
+
+
+
+  <div class="hero">
+    <div class="pfp">
+      <img src="dp1.jpeg" alt="">
+    </div>
+
+    <h1>Arko Sarkar</h1>
+    <p class="subtext"> Developer</p>
+
+    <div class="socials">
+      <!-- From Uiverse.io by vinodjangid07 -->
+      <div class="card">
+        <a href="https://instagram.com/_lysosome_007" class="socialContainer containerOne">
+          <svg class="socialSvg instagramSvg" viewBox="0 0 16 16">
+            <path
+              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+            </path>
+          </svg>
+        </a>
+
+        <a href="https://github.com/infinity-coder07" class="socialContainer containerTwo">
+          <svg class="socialSvg twitterSvg" viewBox="0 0 24 24">
+            <path xmlns="http://www.w3.org/2000/svg"
+              d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+          </svg> </a>
+
+        <a href="https://linkedin.com/in/arko-sarkar07" class="socialContainer containerThree">
+          <svg class="socialSvg linkdinSvg" viewBox="0 0 448 512">
+            <path
+              d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+            </path>
+          </svg>
+        </a>
+
+        <a href="https://www.facebook.com/share/16gxeakQcf/?mibextid=qi2Omg" class="socialContainer containerFour">
+          <svg class="socialSvg whatsappSvg" viewBox="0 0 24 24">
+            <path xmlns="http://www.w3.org/2000/svg"
+              d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z" />
+          </svg>
+        </a>
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+
+
+  <div class="info">
+    <!-- NAVBAR -->
+
+    <input type="radio" name="r1" id="r1" checked />
+    <input type="radio" name="r1" id="r2" />
+    <input type="radio" name="r1" id="r3" />
+    <input type="radio" name="r1" id="r4" />
+
+
+    <div class="nav">
+      <label class="r1" for="r1">Projects</label>
+      <label class="r2" for="r2">Skills</label>
+      <label class="r3" for="r3">Socials</label>
+      <label class="r4" for="r4">About</label>
+    </div>
+
+    <!-- SLIDER -->
+    <div class="slider">
+      <div id="s1" class="slide projects">
+        <h2> Projects</h2>
+
         <ul>
-            <li><a href="#top">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contacth2">Let’s Be Friends</a></li>
-            <li><a href="#more">More</a></li>
-        </ul>
-    </nav>
-
-
-    <h1 id="top">Welcome to My Page</h1>
-
-    <div class="info">
-
-
-        <div class="img">
-            <img src="dp1.jpg" alt="">
-        </div>
-
-
-        <div class="bio">
-            <ui>
-                <li>Name: <span> Arko Sarkar</span> </li>
-                <li>Age: <span> 17</span> </li>
-                <li>CLass: <span> XI - Sicence</span> </li>
-                <li>Hobby: <span> Coding , Origami , Gaming</span> </li>
-                <li>Skill: <span> HTML , CSS , Python</span> </li>
-            </ui>
-
-        </div>
-
-    </div>
-
-    <hr>
-
-    <h2 id="about">BIO :</h2>
-    <p class="bio about">
-        <span>
-            I am a student of class XI, studying in Science stream. I have a keen interest in coding and programming
-            languages. My hobbies include origami and gaming. I am currently learning HTML, CSS, and Python to enhance
-            my skills in web development and programming. I aspire to become a proficient coder and
-            contribute to the tech industry in the future. I believe in continuous learning and strive to improve.
-            I also enjoy exploring new technologies and staying updated with the latest trends in the field of computer
-            science. I am also interested in AI and machine learning
-            <br>
-            <br>
-            I play games like Valorant, Minecraft, Freefire, BGMI, Call of Duty, Need For Speed, Assasian's Creed,
-            Resident Evil, GTA Vice City, GTA IV and many more.
-            <br>
-            <br>
-            I also love to watch anime . I am a big fan of Naruto, Demon Slayer, Death Note, Zom 100. Also Watched some anime movies like
-            Your Name, Weathering with You, A Silent Voice, Susume, I Want to Eat Your Pancreas, The Garden of Words, and many more.
-            I am also a big fan of Marvel movies. I love to watch movies and series like Loki.
-            <br>
-            <br>
-            I also write small stories sometimes and I always have a lot of stories in my mind.
-            I love to travel with friends .
-        </span>
-    </p>
-    <hr>
-    <div class="contact">
-        <h2 id="contacth2">
-            <img src="direct.gif">
-            Vibe With Me :
-        </h2>
-
-        <ul id="contact">
-            <li><a href="https://www.instagram.com/_lysosome_007?igsh=a29rZnJoYm00ZTNu">
-                    <img src="instagram.png" alt="">
-                    _lysosome_007
-                </a></li>
-
-            <li><a href="https://www.facebook.com/share/16gxeakQcf/?mibextid=qi2Omg">
-
-                    <img src="facebook.png" .png" alt="">
-                    Arko Sarkar
-                </a></li>
-
-            <li><a href="https://github.com/Infinity-coder07">
-                    <img src="github.png" alt="">
-                    Infinity-coder07
-                </a></li>
-
-            <li><a href="https://discord.com/users/Lysosome_007">
-                    <img src="discord.png" alt="">
-                    Lysosome_007
-                </a></li>
-
-            <li><a href="https://t.me/Lysosome007">
-                    <img src="telegram.png" alt="">
-                    Lysosome007
-                </a></li>
-
-            <li><a href="https://www.linkedin.com/in/arko-sarkar-307087370?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                    <img src="linkedin.png" alt="">
-                    Arko Sarkar
-                </a></li>
-
-
-
+          <li><a href="https://infinity-coder07.github.io/infinity-quest">Infinity Quest</a></li>
+          <li><a href="https://infinity-coder07.github.io/infinity-tools">Infinity Tools</a></li>
+          <li><a href="https://infinity-coder07.github.io/infinity-elements">Infinity Elements</a></li>
+          <li><a href="https://infinity-coder07.github.io/Infinity-Verb">Infinity Verbs</a></li>
+          <li><a href="https://infinity-coder07.github.io/NK">Nandankanana</a></li>
+          <li><a href="https://codeinplace.stanford.edu/cip5/share/Ms64NECVr6A50XOtbmP0">Tic Tac Toe (Python)</a></li>
         </ul>
 
-    </div>
-
-    <hr>
-    <h2 id="more">More : </h2>
-    <p class="bio about">
-        <span>
-            I have made some projects using HTML, CSS, and Python.
-            <br>
-            <br>
-            Click on the titles below to view them.
-            <br>
-        </span>
-
-        <ul id="links">
-
-            <li><a href="https://infinity-coder07.github.io/NK/">Nandankanan</a></li>
-
-            <li><a href="https://infinity-coder07.github.io/Infinity-verb/">Infinity Verbs</a></li>
-            <li><a href="https://infinity-coder07.github.io/Elements/">Infinity Elements</a></li>
-            <li><a href="https://codeinplace.stanford.edu/cip5/share/Ms64NECVr6A50XOtbmP0">Tic Tac Toe</a></li>
-        
-            
-            
-</ul>
-
-    </p>
-<footer>
         <p>
-            Made by Arko 
+A bunch of projects I’ve built while exploring and learning — like Infinity Quest, Infinity Tools, Infinity Elements, Infinity Verbs, Nandankanana, and even a Python Tic Tac Toe game. I mainly focus on making things simple, interactive, and fun to use.
+</p>
+
+
+      </div>
+
+      <div id="s2" class="slide skills">
+        <h2> Skills</h2>
+
+        <p>
+          <span><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>HTML5</title>
+              <path
+                d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z" />
+            </svg></span>
+          HTML
         </p>
-    </footer>
+        <p>
+          <span><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>CSS</title>
+              <path
+                d="M0 0v20.16A3.84 3.84 0 0 0 3.84 24h16.32A3.84 3.84 0 0 0 24 20.16V3.84A3.84 3.84 0 0 0 20.16 0Zm14.256 13.08c1.56 0 2.28 1.08 2.304 2.64h-1.608c.024-.288-.048-.6-.144-.84-.096-.192-.288-.264-.552-.264-.456 0-.696.264-.696.84-.024.576.288.888.768 1.08.72.288 1.608.744 1.92 1.296q.432.648.432 1.656c0 1.608-.912 2.592-2.496 2.592-1.656 0-2.4-1.032-2.424-2.688h1.68c0 .792.264 1.176.792 1.176.264 0 .456-.072.552-.24.192-.312.24-1.176-.048-1.512-.312-.408-.912-.6-1.32-.816q-.828-.396-1.224-.936c-.24-.36-.36-.888-.36-1.536 0-1.44.936-2.472 2.424-2.448m5.4 0c1.584 0 2.304 1.08 2.328 2.64h-1.608c0-.288-.048-.6-.168-.84-.096-.192-.264-.264-.528-.264-.48 0-.72.264-.72.84s.288.888.792 1.08c.696.288 1.608.744 1.92 1.296.264.432.408.984.408 1.656.024 1.608-.888 2.592-2.472 2.592-1.68 0-2.424-1.056-2.448-2.688h1.68c0 .744.264 1.176.792 1.176.264 0 .456-.072.552-.24.216-.312.264-1.176-.048-1.512-.288-.408-.888-.6-1.32-.816-.552-.264-.96-.576-1.2-.936s-.36-.888-.36-1.536c-.024-1.44.912-2.472 2.4-2.448m-11.031.018c.711-.006 1.419.198 1.839.63.432.432.672 1.128.648 1.992H9.336c.024-.456-.096-.792-.432-.96-.312-.144-.768-.048-.888.24-.12.264-.192.576-.168.864v3.504c0 .744.264 1.128.768 1.128a.65.65 0 0 0 .552-.264c.168-.24.192-.552.168-.84h1.776c.096 1.632-.984 2.712-2.568 2.688-1.536 0-2.496-.864-2.472-2.472v-4.032c0-.816.24-1.44.696-1.848.432-.408 1.146-.624 1.857-.63" />
+            </svg>
+          </span>
+          CSS
+        </p>
+        <p>
+          <span><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>JavaScript</title>
+              <path
+                d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z" />
+            </svg>
+          </span>
+          JS
+        </p>
+        <p>
+          <span><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>Python</title>
+              <path
+                d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z" />
+            </svg>
+          </span>
+          Python
+        </p>
+        <p class="last">
+          <span><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>Devbox</title>
+              <path
+                d="m19.546 7.5726-1.531-1.5703c-.4881.4371-.965.8647-1.442 1.2922l-.959.8596c1.3076 1.3446 2.5887 2.6624 3.8756 3.987l-2.4261 2.4956-1.4508 1.4924c.55.4988 1.0916.9897 1.6397 1.4864l.765.6933 2.209-2.2773c1.2588-1.2976 2.5141-2.5916 3.7736-3.8905v-.001a20797.5906 20797.5906 0 0 1-4.454-4.5674ZM2.992 9.0716A16808.14 16808.14 0 0 1 0 12.141c2.0108 2.0727 3.9927 4.1152 5.9838 6.1666l.5111-.4635c.638-.5786 1.2616-1.144 1.8924-1.715l-1.447-1.4888c-.8134-.8368-1.6208-1.6676-2.431-2.5015 1.0462-1.075 2.0745-2.132 3.1094-3.1959l.7674-.7888c-.4342-.3892-.861-.7718-1.2883-1.1546l-1.114-.9983v.0011c-.9996 1.0251-1.9958 2.0472-2.992 3.0694Zm12.585-6.0372c-1.317 6.199-2.6283 12.3689-3.9453 18.5656l-.1962-.0387a2911.4317 2911.4317 0 0 0-3.0284-.5957c.8529-4.0118 1.7034-8.0133 2.5549-12.0196L12.3533 2.4z" />
+            </svg></span>
+          Others: GitHub, VS Code, Chrome DevTools, AI Integration, Linux, VirtualBox
+        </p>
+
+      </div>
+
+      <div id="s3" class="slide socials">
+        <h2>Social Accounts</h2>
+        <ul>
+          <li><a href="https://github.com/infinity-coder07" target="_blank">
+              <svg class="socialSvg twitterSvg" viewBox="0 0 24 24">
+                <path xmlns="http://www.w3.org/2000/svg"
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+              </svg>
+              GitHub</a></li>
+          <li><a href="https://instagram.com/_lysosome_007" target="_blank">
+              <svg class="socialSvg instagramSvg" viewBox="0 0 16 16">
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+                </path>
+              </svg>
+              Instagram</a></li>
+          <li><a href="https://linkedin.com/in/arko-sarkar07" target="_blank">
+              <svg class="socialSvg linkdinSvg" viewBox="0 0 448 512">
+                <path
+                  d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                </path>
+              </svg>
+              LinkedIn</a></li>
+          <li><a href="https://www.facebook.com/share/16gxeakQcf/?mibextid=qi2Omg" target="_blank">
+              <svg class="socialSvg whatsappSvg" viewBox="0 0 24 24">
+                <path xmlns="http://www.w3.org/2000/svg"
+                  d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z" />
+              </svg>
+              Facebook</a></li>
+          <li><a href="https://discord.com/users/Lysosome_007" target="_blank">
+              <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <title>Discord</title>
+                <path
+                  d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z" />
+              </svg>
+              Discord</a></li>
+          <li><a href="https://t.me/Lysosome007" target="_blank">
+              <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <title>Telegram</title>
+                <path
+                  d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+              </svg>
+
+              Telegram</a></li>
+        </ul>
+      </div>
+
+      <div id="s4" class="slide bio">
+        <h2>Bio & Vibe</h2>
+        <p>
+        <p>
+          I’m a Class XI Science student with a strong interest in coding and technology. I enjoy building projects and
+          turning ideas into real applications. Currently, I’m learning HTML, CSS, JavaScript, and Python, and exploring
+          areas like web development, UI design, and the basics of AI and machine learning.
+          <br><br>
+          Outside of coding, I enjoy gaming — from competitive titles like Valorant to story-driven games like GTA IV,
+          Assassin’s Creed, and more. I’m also really into anime, with favorites like Naruto, Demon Slayer, Death Note,
+          and movies like Your Name and A Silent Voice. Marvel series like Loki are also my thing.
+          <br><br>
+          I like being creative too — whether it’s writing short stories, doing origami, or just coming up with new
+          ideas. I also enjoy traveling with friends and experiencing new things.
+          <br><br>
+          I believe in learning continuously and improving step by step, aiming to grow into a skilled developer and
+          create meaningful projects in the future.
+        </p>
+
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.onload = function () {
+      setTimeout(() => {
+        document.querySelector('#main-loading').style.display = 'none';
+      }, 2000);
+    };
+  </script>
 
 </body>
 
